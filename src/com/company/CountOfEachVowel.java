@@ -36,11 +36,11 @@ public class CountOfEachVowel {
             }
         }
         int [] set = new int[5];
-        set[1] = counterA;
-        set[2] = counterE;
-        set[3] = counterI;
-        set[4] = counterO;
-        set[5] = counterU;
+        set[0] = counterA;
+        set[1] = counterE;
+        set[2] = counterI;
+        set[3] = counterO;
+        set[4] = counterU;
         System.out.println(Arrays.toString(set));
     }
 }
