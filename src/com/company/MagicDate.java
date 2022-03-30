@@ -14,7 +14,8 @@ public class MagicDate {
         int day = scanner.nextInt();
         int [] yearDigits = new int[4];
         for (int i = 0; i < 4; i++) {
-            yearDigits [i] =  Integer.parseInt(year.charAt(i));
+            yearDigits [i] = Character.getNumericValue(year.charAt(i));
+            //yearDigits [i] = Integer.parseInt(year.charAt(i)); //wrong for some reason
         }
         System.out.println(Arrays.toString(yearDigits));
         if ((month * day) == yearDigits [3]) {
